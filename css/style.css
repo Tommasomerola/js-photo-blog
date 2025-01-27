@@ -39,38 +39,52 @@ main{
     justify-content: space-between;
     align-items: center;
     width: 60%;
-    
   }
 
 .card{
     /* DEBUG */
-    background-color: red;
+    background-color: white;
     /* height: 100%; */
     width: calc(33% - 20px);
-    margin-top: 20px;
+    
     margin-bottom: 20px;
 }
+            /* impostazioni img (img+pin) */
 
-.img img{
+/* metto in absolute il div di img e pin */
+.photo{
+    position: relative;
+}
+
+#img{
     width: 100%;
     height: 250px;
     padding: 10px 10px 0 10px;
     object-fit: cover;
 }
-
+/* pin in position absolute centrato */
+#pin{
+    position: absolute;
+    top: -10px; /* centra verticalmente il pin */
+    left: 50%; /* allinea al centro orizzontale */
+    transform: translateX(-50%); /* centra il pin orizzontalmente */
+    width: 30px;
+    z-index: 1; 
+}
+            /* impostazioni didascalia */
 .date{
     padding-left: 10px;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
 .text {
     padding-left: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
     font-size: 25px;
     font-weight: bold;
 }
 
-/* MEDIA QUERY */
+            /* MEDIA QUERY */
 
 /* versione tablet  */
 @media (min-width: 768px) and (max-width: 1024px){
