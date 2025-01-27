@@ -40,3 +40,6 @@ axios.get("https://lanciweb.github.io/demo/api/pictures/")
 
 
 // mi assicuro di controllare anche un eventuale errore alla chiamata api
+.catch(error => {
+    console.log(error);
+});
