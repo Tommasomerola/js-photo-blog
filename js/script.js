@@ -1,9 +1,18 @@
 // Tramite api ottengo i dati che mi serviranno per riempire i campi delle card
 // https://lanciweb.github.io/demo/api/pictures/
 
-// dichiaro una variabile nella quale salverò i dai richiamati
+// dichiaro una variabile che richiama l HTML che mi permetterà di salvarci i dati
+const container = document.querySelector(".container");
 
 // effettuo la chiamata all api, gestendo i dati di ritorno 
+axios.get("https://lanciweb.github.io/demo/api/pictures/")
+.then (response => {
+    // salvo i dati richiamati in una variabile
+    const data = response.data
+    console.log(data)
+})
+
+
 
 // tramite un ciclo for, prendo in cosiderazione ogni singolo 
 // elemento e ne estrapolo i dati
