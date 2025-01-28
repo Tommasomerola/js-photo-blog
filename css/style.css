@@ -48,6 +48,7 @@ main{
     width: calc(33% - 20px);
     
     margin-bottom: 20px;
+    box-shadow: 5px 10px 60px #000;
 }
             /* impostazioni img (img+pin) */
 
@@ -80,13 +81,14 @@ main{
 
 .card:hover{
     transform:rotate(10deg);
+    box-shadow: 15px 20px 30px #000;
 }
 .card:hover #pin{
     display: none;
 }
 
             /* impostazioni didascalia */
-            
+
 .date{
     padding-left: 10px;
     padding-top: 10px;
