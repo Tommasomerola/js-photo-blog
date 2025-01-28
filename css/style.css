@@ -71,6 +71,14 @@ main{
     width: 30px;
     z-index: 1; 
 }
+
+#pin{
+    display: block;
+}
+
+.card:hover #pin{
+    display: none;
+}
             /* impostazioni didascalia */
 .date{
     padding-left: 10px;
