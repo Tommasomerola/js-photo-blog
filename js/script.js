@@ -38,6 +38,17 @@ axios.get("https://lanciweb.github.io/demo/api/pictures/")
     }
 })
 
+// tramite i dati ottenuti prima dalla chiamata api, gestisto il click di ogni singola card
+// in modo tale che il popup con l immagine vada in display block 
+
+// creiamo una variabile dove salviamo i dati delle card
+
+// estrapoliamo l url di ogni singola foto 
+
+// creiamo la parte HTML contenente la foto 
+
+// inviamo il tutto tramite .innerHTML
+
 
 // mi assicuro di controllare anche un eventuale errore alla chiamata api
 .catch(error => {
